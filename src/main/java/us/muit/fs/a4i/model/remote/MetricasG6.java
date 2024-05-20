@@ -27,8 +27,8 @@ import us.muit.fs.a4i.model.entities.ReportItem.ReportItemBuilder;
  * @author Juan Luis Verdugo Blanco
  *
  */
-public class IndicatorEnquirer extends GitHubEnquirer {
-	private static Logger log = Logger.getLogger(IndicatorEnquirer.class.getName());
+public class MetricasG6 extends GitHubEnquirer {
+	private static Logger log = Logger.getLogger(MetricasG6.class.getName());
 
 	/**
 	 * <p>
@@ -36,7 +36,7 @@ public class IndicatorEnquirer extends GitHubEnquirer {
 	 * </p>
 	 */
 
-	public IndicatorEnquirer() {
+	public MetricasG6() {
 		super();
 		metricNames.add("clasificacion");
 		metricNames.add("correccion");

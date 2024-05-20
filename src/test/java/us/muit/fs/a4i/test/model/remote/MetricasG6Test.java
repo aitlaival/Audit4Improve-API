@@ -27,7 +27,7 @@ import us.muit.fs.a4i.exceptions.ReportItemException;
 import us.muit.fs.a4i.model.entities.ReportI;
 import us.muit.fs.a4i.model.entities.ReportItem;
 import us.muit.fs.a4i.model.entities.ReportItem.ReportItemBuilder;
-import us.muit.fs.a4i.model.remote.IndicatorEnquirer;
+import us.muit.fs.a4i.model.remote.MetricasG6;
 
 /**
  * <p>
@@ -37,8 +37,8 @@ import us.muit.fs.a4i.model.remote.IndicatorEnquirer;
  * @author Aitor Laiseca Valencia
  *
  */
-class IndicatorEnquirerTest {
-private static Logger log = Logger.getLogger(IndicatorEnquirerTest.class.getName());
+class MetricasG6Test {
+private static Logger log = Logger.getLogger(MetricasG6Test.class.getName());
 
 /**
  * @throws java.lang.Exception Se incluye por defecto al crear automáticamente
@@ -89,7 +89,7 @@ void tearDown() throws Exception {
 void testBuildReport() {
 
 
-IndicatorEnquirer enquirer = new IndicatorEnquirer();
+MetricasG6 enquirer = new MetricasG6();
 
 ReportI report = enquirer.buildReport("aitlaival/Audit4Improve-API");
 

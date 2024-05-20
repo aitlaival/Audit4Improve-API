@@ -22,13 +22,13 @@ import org.junit.jupiter.api.function.Executable;
 import org.mockito.Mockito;
 
 import us.muit.fs.a4i.control.IssuesRatioIndicatorStrategy;
-import us.muit.fs.a4i.control.ProcesoDeIssuesIndicatorStrategy;
+import us.muit.fs.a4i.control.IndicatorStrategyG6;
 import us.muit.fs.a4i.exceptions.NotAvailableMetricException;
 import us.muit.fs.a4i.model.entities.ReportItemI;
 
-public class ProcesoDeIssuesIndicatorTest {
+public class IndicatorStrategyG6Test {
 
-	private static Logger log = Logger.getLogger(ProcesoDeIssuesIndicatorTest.class.getName());
+	private static Logger log = Logger.getLogger(IndicatorStrategyG6Test.class.getName());
 	
 	/**
 	 * @throws java.lang.Exception
@@ -79,7 +79,7 @@ public class ProcesoDeIssuesIndicatorTest {
 	        Mockito.when(mockNum_errores.getValue()).thenReturn(5.0);
 
 	        // Creamos una instancia de IssuesRatioIndicator
-	        ProcesoDeIssuesIndicatorStrategy indicator = new ProcesoDeIssuesIndicatorStrategy();
+	        IndicatorStrategyG6 indicator = new IndicatorStrategyG6();
 
 	        // Ejecutamos el método que queremos probar con los mocks como argumentos
 	        List<ReportItemI<Double>> metrics = Arrays.asList(mockClasificacion, mockCorreccion, mockNum_errores);
@@ -101,7 +101,7 @@ public class ProcesoDeIssuesIndicatorTest {
 	        Mockito.when(mockClasificacion.getValue()).thenReturn(10.0);
 
 	        // Creamos una instancia de IssuesRatioIndicator
-	        ProcesoDeIssuesIndicatorStrategy indicator = new ProcesoDeIssuesIndicatorStrategy();
+	        IndicatorStrategyG6 indicator = new IndicatorStrategyG6();
 
 	        // Ejecutamos el método que queremos probar con una sola métrica
 	        List<ReportItemI<Double>> metrics = Arrays.asList(mockClasificacion);
@@ -115,7 +115,7 @@ public class ProcesoDeIssuesIndicatorTest {
 	    @Test
 	    public void testRequiredMetrics() {
 	        // Creamos una instancia de IssuesRatioIndicator
-	        ProcesoDeIssuesIndicatorStrategy indicatorStrategy = new ProcesoDeIssuesIndicatorStrategy();
+	        IndicatorStrategyG6 indicatorStrategy = new IndicatorStrategyG6();
 
 	        // Ejecutamos el método que queremos probar
 	        List<String> requiredMetrics = indicatorStrategy.requiredMetrics();

@@ -12,7 +12,7 @@ import us.muit.fs.a4i.model.entities.IndicatorI.IndicatorState;
 import us.muit.fs.a4i.model.entities.ReportItem;
 import us.muit.fs.a4i.model.entities.ReportItemI;
 
-public class ProcesoDeIssuesIndicatorStrategy implements IndicatorStrategy<Double> {
+public class IndicatorStrategyG6 implements IndicatorStrategy<Double> {
 
 	private static Logger log = Logger.getLogger(Indicator.class.getName());
 
